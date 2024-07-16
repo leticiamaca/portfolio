@@ -29,6 +29,7 @@ a{
 
 h1, h2, h3, p{
     color: var(--branco-texto);
+    font-family: 'Inter', sans-serif;
     
 }
 
@@ -44,6 +45,7 @@ h1, h2, h3, p{
 .menu a{
     margin: 0px 50px;
     font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 
@@ -68,3 +70,157 @@ background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rg
 .container-bemVindo p{
     font-family: 'Inter', sans-serif;
 } 
+
+.container-SobreMim{
+    height: 70vh;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    padding: 200px;
+    
+}
+
+.sobre-mim h2{
+    text-align: center;
+}
+
+.sobre-mim p {
+    width: 500px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.container-tecnologias{
+    background-color: var(--roxo-claro);
+display: flex;
+align-items: center;
+flex-direction: column;
+padding: 200px;
+height: 70vh;
+}
+
+.container-tecnologias h2{
+font-family: 'Inconsolata', sans-serif;
+text-transform: uppercase;
+font-size: 36px;
+margin-bottom: 50px;
+}
+
+.tecnologias-icon img{
+padding: 30px;
+}
+
+.container-formacoes{
+    background: rgb(29,20,37);
+    background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rgba(29,20,37,1) 100%);
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    padding: 200px;
+
+    
+}
+
+.container-formacoes h3{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.formacoes-grid{
+   display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+.formacao-um, .formacao-dois, .formacao-tres{
+    margin: 50px;
+}
+
+.formacoes-grid p{
+    text-align: center;
+    width: 150px;
+}
+
+
+.formacoes-grid img{
+     width: 150px;
+}
+
+.formacoes-grid .formacao-tres img{
+   width: 100px;
+}
+
+
+.container-projetos{
+    text-align: center;
+    height: 70vh;
+    padding: 120px;
+}
+
+.projetos-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr ;
+   grid-template-rows: 2fr;
+ margin: 0 auto;
+}
+.projetos-grid div{
+    padding: 20px 0px;
+}
+
+.projetos-grid img{
+    width: 190px;
+}
+
+
+.container-projetos h3{
+    text-transform: uppercase;
+font-size: 36px;
+}
+
+
+
+
+
+.container-Informacoes{
+    text-align: center;
+    height: 70vh;
+    background: rgb(29,20,37);
+    background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rgba(29,20,37,1) 100%);
+    padding: 200px;
+}
+
+.container-Informacoes h3{
+    text-transform: uppercase;
+font-size: 36px;
+}
+.flex-redesSociais{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.redes-sociais{
+    text-align: left;
+}
+
+.redes-sociais div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.redes-sociais div p{
+    font-family: 'Inter' sans-serif;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.foto-saibaMais p{
+    width: 300px;
+}
