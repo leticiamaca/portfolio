@@ -46,33 +46,55 @@ h1, h2, h3, p{
     margin: 0px 50px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    transition: ease-in-out 500ms;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    font-size: 18px;
+    transition: ease 500ms;
+    
+}
+
+.menu img{
+    width: 40px;
+    transition: ease 500ms;
+}
+
+.menu img:hover{
+    width: 45px;
+    transition: ease-in-out 500ms;
 }
 
 
 .container-bemVindo {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    text-align:center;
+    height: 100vh;
     background: rgb(29,20,37);
-background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rgba(29,20,37,1) 100%);
-
+    background-image: url(img/bem-vindo-banner.png);
+background-size:cover;
 }
+
 
 .container-bemVindo h1{
     font-family: 'Inconsolata', sans-serif;
+    font-size: 48px;
     font-weight: 600;
   text-transform: uppercase;
 } 
 
 .container-bemVindo p{
+    font-size: 30px;
     font-family: 'Inter', sans-serif;
+
 } 
 
 .container-SobreMim{
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content:space-around;
     flex-direction: row;
@@ -87,8 +109,19 @@ background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rg
 
 .sobre-mim p {
     width: 500px;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
+}
+
+.sobre-mim p span{
+    font-size: 20px;
+    font-weight: bold;
+    color: #992b8e
+}
+
+.container-SobreMim img{
+    width: 500px;
+    border-radius: 20%;
 }
 
 .container-tecnologias{
@@ -96,131 +129,82 @@ background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rg
 display: flex;
 align-items: center;
 flex-direction: column;
+justify-content: center;
 padding: 200px;
-height: 70vh;
+height: 100vh;
 }
 
 .container-tecnologias h2{
 font-family: 'Inconsolata', sans-serif;
 text-transform: uppercase;
 font-size: 36px;
-margin-bottom: 50px;
+margin-bottom: 40px;
 }
 
-.tecnologias-icon img{
-padding: 30px;
+.tecnologias-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2fr;
+    gap: 10px;
 }
 
-.container-formacoes{
-    background: rgb(29,20,37);
-    background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rgba(29,20,37,1) 100%);
-    height: 70vh;
+.bloco{
+    border: 2px #992b8e solid;
     display: flex;
     align-items: center;
-    flex-direction: column; 
-    padding: 200px;
-
-    
-}
-
-.container-formacoes h3{
-    font-size: 36px;
     text-transform: uppercase;
+    gap: 30px;
+    padding: 20px;
+    height: 100px;
+    width: 300px;
+    font-size: 20px;
 }
 
-.formacoes-grid{
-   display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px;
-}
-
-
-.formacao-um, .formacao-dois, .formacao-tres{
-    margin: 50px;
-}
-
-.formacoes-grid p{
-    text-align: center;
-    width: 150px;
+.bloco svg{
+    width: 50px;
 }
 
 
-.formacoes-grid img{
-     width: 150px;
-}
-
-.formacoes-grid .formacao-tres img{
-   width: 100px;
-}
 
 
 .container-projetos{
     text-align: center;
-    height: 70vh;
-    padding: 120px;
+    height: 100vh;
+    padding: 70px;
 }
 
 .projetos-grid{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr ;
-   grid-template-rows: 2fr;
- margin: 0 auto;
+   margin: 0 auto;
 }
 .projetos-grid div{
-    padding: 20px 0px;
+    background-color: var(--roxo-claro);
+    width: 250px;
+    height: 250px;
 }
 
 .projetos-grid img{
-    width: 190px;
+    width: 300px;
+    transition: ease 500ms;
+}
+.projetos-grid img:hover{
+    width: 320px;
+    transition: ease-in-out 500ms;
 }
 
 
 .container-projetos h3{
     text-transform: uppercase;
 font-size: 36px;
+padding-bottom: 10px;
 }
 
 
 
 
 
-.container-Informacoes{
-    text-align: center;
-    height: 70vh;
-    background: rgb(29,20,37);
-    background: radial-gradient(circle, rgba(29,20,37,1) 0%, rgba(52,21,49,1) 0%, rgba(29,20,37,1) 100%);
-    padding: 200px;
-}
-
-.container-Informacoes h3{
-    text-transform: uppercase;
-font-size: 36px;
-}
-.flex-redesSociais{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-}
-
-.redes-sociais{
-    text-align: left;
-}
-
-.redes-sociais div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.redes-sociais div p{
-    font-family: 'Inter' sans-serif;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.foto-saibaMais p{
-    width: 300px;
+footer{
+    background-color: var(--fundo-roxo);
+    height: 100vh;
 }
