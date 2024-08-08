@@ -41,6 +41,9 @@ h1, h2, h3, p{
 }
 
 .menu{
+    background-color: #3415318a;
+    position: fixed;
+    width: 100vw;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -80,7 +83,7 @@ header button{
 
 .container-bemVindo {
     margin-left: 150px;
-    padding: 100px;
+    padding: 150px;
     text-align: center;
    display: flex;
    flex-direction: column;
@@ -215,6 +218,18 @@ margin-bottom: 40px;
     height: 250px;
 }
 
+.projetos-grid .projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto p{
+    font-size: 14px;
+}
+
+
+
 .projetos-grid div:hover{
     transition: ease 500ms;
 background-color: #5B2556;
@@ -326,7 +341,7 @@ footer .icons{
         left: 0;
         top: 70px;
         height: 500px;
-        width: 350px;
+        width: 280px;
         padding: 0px 30px;
         flex-direction: column;
         justify-content: space-around;
