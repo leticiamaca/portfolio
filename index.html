@@ -12,7 +12,7 @@
         rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <script  src="carregar-imagens.js" defer></script>
+        <script  src="menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
@@ -24,14 +24,13 @@
 </head>
 
 <body>
-    <header>
-        <div class="interface">
+    <div class="interface" id="header">
             <div class="logo">
                 <a href="#">
                     <img src="img/flor-de-lotus.svg" alt="logo-menu">
                 </a>
             </div>
-            <nav class="menu-desktop">
+            <nav class="menu-desktop" id="menu-desktop">
                 <ul>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#tecnologias">Tecnologias</a></li>
@@ -46,7 +45,34 @@
                     <button>Contato</button>
                 </a>
             </div>
+            <div class="btn-abrir" id="btn_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            <div class="menu-mobile" id="mobile_menu"> 
+                
+                <div class="btn-fechar">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#tecnologias">Tecnologias</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#desenhos">Desenhos</a></li>
+                        <li><a href="https://github.com/leticiamaca" target="_blank">GitHub</a></li>
+                        <li><a href="#">Contato</a></li>
+    
+                    </ul>
+                </nav>
+               
+                
+            </div>
+            <div class="overlay-menu">
+                
+            </div>
         </div>
+    <header>
+        
         <section><h1 class="topo-do-site">&lt;h1&gt; Olá, <br> Aqui é a Letícia! &lt;/h1&gt;</h1></section>
         
     </header>
@@ -67,7 +93,7 @@
             </div>
         </section>
         <section class="especialidades" id="tecnologias">
-            <div class="interface">
+            
                 <h2 class="titulo-sessoes">Tecnologias<span>.</span></h2>
                 <div class="especialidades-flex">
                     <div class="especialidades-box">
@@ -258,7 +284,7 @@
                         <h3>PHOTOSHOP</h3>
                     </div>
                 </div>
-            </div>
+           
         </section>
 
         <section id="projetos">
