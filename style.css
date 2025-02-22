@@ -193,7 +193,7 @@ header section {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     background-color: #090e16;
 }
@@ -634,11 +634,17 @@ display: none;
 }
 
 @media screen and (max-width: 750px){
+
+    .especialidades-flex {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
     .especialidades-box{
         margin: 5px;
         padding: 5px;
-        width: 160px;
-        height: 80px;
+        width: 280px;
+        height: 100px;
     }
 
     .especialidades-box h3{
@@ -671,10 +677,45 @@ display: none;
 }
 
 @media screen and (max-width:600px){
+    .especialidades-flex {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+
     .especialidades-box{
         margin: 5px;
         padding: 5px;
-        width: 130px;
+        width: 210px;
+        height: 100px;
+    }
+
+    .especialidades-box h3{
+        font-size: 16px;
+    }
+
+    .especialidades-box svg{
+    margin:5px;
+        width: 45px;}
+}
+
+@media screen and (max-width: 500px){  
+      .card1,
+.card2,
+.card3 {
+    width: 200px;
+    height: 200px;
+}
+    .especialidades-flex {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .especialidades-box{
+        margin: 5px;
+        width: 185px;
         height: 70px;
     }
 
@@ -683,11 +724,8 @@ display: none;
     }
 
     .especialidades-box svg{
-    margin:5px;
-        width: 25px;}
-}
-
-@media screen and (max-width: 500px){
+        margin:5px;
+            width: 35px;}
 
     .especialidades-sobre{
         flex-direction: column;
@@ -696,7 +734,7 @@ display: none;
     
 
     .grid{
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .wide{
@@ -716,11 +754,6 @@ display: none;
     }
 }
     @media screen and (max-width: 450px){
-        .especialidades-box{
-            margin: 5px;
-            width: 120px;
-            height: 70px;
-        }
     
         .especialidades-box h3{
             font-size: 12px;
