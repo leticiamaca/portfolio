@@ -43,7 +43,7 @@ header {
 
 
 .logo>a>img {
-    width: 70px;
+    width: 50px;
 }
 
 .interface {
@@ -184,7 +184,7 @@ header section {
     text-align: center;
     font-size: 32px;
     color: #fff;
-    margin: auto;
+  
 
 }
 
@@ -193,9 +193,9 @@ header section {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
-    background-color: #090e16;
+    background-color: #000000;
 }
 
 .especialidades-flex {
@@ -346,6 +346,7 @@ header section {
 .card1>.content,
 .card2>.content,
 .card3>.content {
+    font-size: 15px;
     padding: 20px;
     text-align: center;
     transform: translateY(100px);
@@ -401,7 +402,6 @@ header section {
     align-items: center;
     flex-direction: column;
     padding: 40px 4%;    
-    height: 100vh;
     background-color: #090e16;
 
 }
@@ -445,11 +445,7 @@ grid-column: span 1;
     grid-column: span 2;
 }
 
-.carousel-controls{
-    display: none;
-    text-align: center;
-    margin-top: 10px;
-}
+
 
 button{
     padding: 10px;
@@ -625,7 +621,7 @@ display: none;
         font-size:16px;}
 
         .grid{
-            max-width: 750px;
+            max-width: 700px;
         }
     
         .foto9, .foto12,.foto13 {
@@ -634,6 +630,8 @@ display: none;
 }
 
 @media screen and (max-width: 750px){
+
+
 
     .especialidades-flex {
         display: grid;
@@ -654,6 +652,14 @@ display: none;
     .especialidades-box svg{
     margin:5px;
         width: 35px;}
+
+        .card1,
+        .card2,
+        .card3 {
+            width: 230px;
+            height: 230px;
+        }
+
     .grid{
         max-width: 600px;
     }
@@ -767,7 +773,7 @@ display: none;
     @media screen and (max-width: 395px){
         .especialidades-box{
             margin: 5px;
-            width: 100px;
+            width: 135px;
             height: 70px;
         }
     
@@ -778,6 +784,13 @@ display: none;
         .especialidades-box svg{
         margin:5px;
             width: 20px;}
+    }
+
+    footer .redes-sociais svg{
+        margin: 20px;
+        padding: 0px;
+        width:30px;
+        height: 30px;
     }
     
 
