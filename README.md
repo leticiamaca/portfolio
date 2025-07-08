@@ -10,6 +10,11 @@ O objetivo principal foi aplicar meus conhecimentos em front-end, criar uma pág
 This is my first portfolio developed with HTML, CSS, and JavaScript.  
 The main goal was to apply my front-end skills, build a responsive page, and showcase my projects visually and in an organized way.
 
+## 📷 Screenshot
+
+![screenshot](./portfolio-projects.png) 
+![screenshot](./desenhos.png) 
+
 ## 🛠️ Tecnologias | Technologies
 
 - HTML5  
